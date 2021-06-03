@@ -1,0 +1,119 @@
+.container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.nav-title {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-title h1 {
+  font-size: 2em;
+  font-family: "Girassol", cursive;
+  color: red;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+.container-form {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 80px;
+  background: wheat;
+  border-radius: 15px;
+}
+.container-form form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+#required-first-name-img {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-email-img {
+  position: absolute;
+  top: 129px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-phone-img {
+  position: absolute;
+  top: 169px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-city-img {
+  position: absolute;
+  top: 208px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-province-img {
+  position: absolute;
+  top: 249px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-country-img {
+  position: absolute;
+  top: 288px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-postal-code-img {
+  position: absolute;
+  top: 328px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-username-img {
+  position: absolute;
+  top: 369px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-password-img {
+  position: absolute;
+  top: 409px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+#required-last-name-img {
+  position: absolute;
+  top: 48px;
+  right: 5px;
+  width: 13px;
+  height: 13px;
+}
+.container-form form input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+
+.container-form form button {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  color: blue;
+  margin-bottom: 10px;
+}

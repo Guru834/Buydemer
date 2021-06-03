@@ -1,0 +1,31 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+}
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Girassol", cursive;
+}
+.bar_button {
+  margin-top: 5px;
+}
+.img_section1 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.read_section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2%;
+}
+.informationdiv ul {
+  list-style: none;
+}
+.infoseperate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

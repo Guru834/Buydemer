@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/post.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Post</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation-bar">
+            <div class="bar_button">
+                <button id ="ok" type="button" class="btn btn-info" onclick="changecolor()">Home</button>
+            </div>
+            <div class="title_div">
+                <h1>buydemer</h1>
+            </div>
+            <div class="bar_button">
+                <button type="button" class="btn btn-info"><a href="../HTML/post.html"  style="text-decoration:none; color:black;">Post</a></button>
+                <button type="button" class="btn btn-info"><a href="../HTML/login.html"  style="text-decoration:none; color:black;">Logout</a></button>            </div>
+        </div>
+
+        <div class="container-form">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button id = "btnjob" type="button" class="btn btn-primary" onclick="show('jobdiv')">Jobs</button>
+                <button id = "btnelectronic" type="button" class="btn btn-primary" onclick="show('elecdiv')">Electronic</button>
+                <button id = "btnrealestate" type="button" class="btn btn-primary" onclick="show('realdiv')">Real-Estate</button>
+            </div>
+            
+            <div class="main-form" id = "all3forms">
+                
+
+            </div>
+            <div class="tempform" id = "jobdiv" >
+
+            </div>
+            <div class="tempform" id = "elecdiv">
+
+            </div>
+            <div class="tempform" id="realdiv">
+
+            </div>
+            <!-- <div id="main_place">
+                main
+              </div>
+              
+              <button onclick="show('operation1')">Replace to operation 1</button>
+              <button onclick="show('operation2')">Replace to operation 2</button>
+              <button onclick="show('operation3')">Replace to operation 3</button>
+              
+              
+              <div id=operation1>
+                
+              </div>
+              
+              <div id=operation2>
+                
+              </div>
+              
+              <div id=operation3>
+                
+              </div>
+               -->
+              
+        </div>
+        
+     
+</body>
+<script src = "../JS/post.js" defer></script> 
+<!-- <script>
+    var maindiv = document.getElementById('main_place');
+    var operation1 = document.getElementById('operation1');
+    var operation2 = document.getElementById('operation2');
+
+    var input_name = document.createElement("input");
+    input_name.setAttribute('type',"text");
+    input_name.setAttribute('name',"name");
+    input_name.style.width = '300px';
+    input_name.style.height = '30px';
+    input_name.style.borderRadius = '3px';
+    input_name.style.marginBottom = '10px';
+    input_name.placeholder = "Enter Name";
+    operation1.appendChild(input_name);
+
+    var input_name = document.createElement("input");
+    input_name.setAttribute('type',"text");
+    input_name.setAttribute('name',"name");
+    input_name.style.width = '300px';
+    input_name.style.height = '30px';
+    input_name.style.borderRadius = '3px';
+    input_name.style.marginBottom = '10px';
+    input_name.placeholder = "Enter class";
+    operation2.appendChild(input_name);
+
+    function show(param_div_id) {
+        
+      maindiv.innerHTML = document.getElementById(param_div_id).innerHTML;
+    }
+  </script> -->
+
+</html>
