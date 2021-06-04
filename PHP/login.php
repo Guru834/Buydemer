@@ -29,10 +29,10 @@ else
     else{
 
       if(empty($susername) || $_SESSION['Username'] != $susername){
-        header("Location: http://localhost/FinalProject/Project/HTML/login.php?error=UserName/Password is incorrect");
+        header("Location: http://localhost/Buydemer/Buydemer/HTML/login.php?error=UserName/Password is incorrect");
       }
       else if(empty($spassword)||  $_SESSION['spassword'] != $spassword){
-        header("Location: http://localhost/FinalProject/Project/HTML/login.php?error=UserName/Password  is incorrect");      }
+        header("Location: http://localhost/Buydemer/Buydemer/HTML/login.php?error=UserName/Password  is incorrect");      }
       
     }
 }

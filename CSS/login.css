@@ -1,44 +1,51 @@
 .container {
   margin: 0 auto;
-  width: 50%;
-  text-align: center;
 }
 .nav-title {
   display: flex;
   justify-content: space-around;
 }
 .nav-title h1 {
-  font-size: 2em;
   font-family: "Girassol", cursive;
-  color: pink;
-  letter-spacing: 5px;
-  font-size: 50px;
+  color: #ff652f;
+  letter-spacing: 20px;
+  font-size: 70px;
 }
 .container-form {
-  overflow: hidden;
-  padding: 80px;
-  background: wheat;
-  border-radius: 15px;
+  margin-top: 5%;
 }
 .form1 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container-form form input {
-  width: 300px;
-  height: 30px;
+.form1 input {
+  width: 334px;
+  height: 44px;
   border: none;
-  border-radius: 3px;
   padding-left: 8px;
   margin-bottom: 10px;
-  display: flex;
+  border-radius: 15px 50px;
 }
-.container-form form button {
-  width: 300px;
-  height: 30px;
+.form1 button {
+  width: 10%;
+  height: 36px;
   border: none;
   border-radius: 17px;
   padding-left: 7px;
-  color: blue;
+  color: black;
+  font-size: 17px;
+  min-width: 130px;
+  margin-top: 6px;
 }
+
+.form1 button a {
+  text-decoration: none;
+  color: black;
+}
+/* @media screen and (max-width: 650px) {
+  .container {
+    background-color: red;
+  }
+} */

@@ -16,7 +16,7 @@ include 'connection.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Main</title>
 </head>
-<body>
+<body style="background-color: #272727">
     <div class="container">
         <div class="navigation-bar">
             <div class="bar-left">
@@ -32,8 +32,8 @@ include 'connection.php';
                 </div>
             </div>
             <div class="bar-right">
-                <button type="button" class="btn btn-info"><a href="../HTML/post.html"  style="text-decoration:none; color:black;">Post</a></button>
-                <button type="button" class="btn btn-info"><a href="../HTML/login.html"  style="text-decoration:none; color:black;">Logout</a></button>
+                <button type="button" class="btn btn-info"><a href="../HTML/post.html"  style="text-decoration:none; color:#272727;">Post</a></button>
+                <button type="button" class="btn btn-info"><a href="../HTML/login.html"  style="text-decoration:none; color:#272727;">Logout</a></button>
             </div>
         </div>
         <div class="searchbar_div">
