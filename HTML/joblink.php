@@ -16,7 +16,7 @@ include 'connection.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Main</title>
 </head>
-<body>
+<body style="background-color: #272727">
     <div class="container">
         <div class="navigation-bar">
             <div class="bar-left">

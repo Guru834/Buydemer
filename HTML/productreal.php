@@ -16,7 +16,7 @@ $realestateid = $_GET['realestateid'];
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
     <title>Product</title>
 </head>
-<body>
+<body style="background-color: #272727">
     <div class="container">
         <div class="navigation-bar">
             <div class="bar_button">

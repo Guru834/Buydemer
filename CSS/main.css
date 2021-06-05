@@ -50,6 +50,10 @@
   background-color: #49ff05;
   border-color: #49ff05;
 }
+.bar-right button:hover {
+  background-color: orange;
+  border-color: orange;
+}
 .searchbar_div form {
   margin: auto;
   max-width: 100%;
@@ -78,6 +82,9 @@
   padding-bottom: 13px;
   border-radius: 15px 50px;
 }
+.searchbar_div button:disabled {
+  display: none;
+}
 
 /* Products */
 
@@ -87,6 +94,8 @@
   /* justify-content: space-between; */
   margin: 10px;
   min-width: 990px;
+  background-color: #fcfbfb;
+  border-radius: 10px;
 }
 .img_div img {
   height: 200px;
@@ -96,7 +105,7 @@
 }
 .information_div {
   margin: 10px;
-  min-width: 990px;
+  min-width: 745px;
   word-wrap: break-word;
 }
 
@@ -110,8 +119,8 @@
   height: 100px;
   width: 100px;
 }
-@media only screen and (max-width: 990px) {
+/* @media only screen and (max-width: 990px) {
   .products_div {
     background-color: lightblue;
   }
-}
+} */

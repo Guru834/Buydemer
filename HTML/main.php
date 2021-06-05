@@ -33,13 +33,13 @@ include 'connection.php';
             </div>
             <div class="bar-right">
                 <button type="button" class="btn btn-info"><a href="../HTML/post.html"  style="text-decoration:none; color:#272727;">Post</a></button>
-                <button type="button" class="btn btn-info"><a href="../HTML/login.html"  style="text-decoration:none; color:#272727;">Logout</a></button>
+                <button type="button" class="btn btn-info"><a href="login.php"  style="text-decoration:none; color:#272727;">Logout</a></button>
             </div>
         </div>
         <div class="searchbar_div">
             <form action = "search.php" method="post">
-                <input type="text" placeholder="Search for anything..." name = "search">
-                <a href = "#"><button type = "submit" name = "submit-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <input type="text" placeholder="Search for anything..." name = "search" id = "search" oninput="searchButtonMagic()">
+                <a href = "#"><button type = "submit" name = "submit-search" id = "btnsearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                   </svg></button></a>
             </form>
@@ -179,4 +179,15 @@ include 'connection.php';
     </div>
     
 </body>
+<script>
+
+    var search = document.getElementById("search");
+    document.getElementById('btnsearch').disabled = true;
+
+    function searchButtonMagic(){
+        document.getElementById('btnsearch').disabled = false;
+    }
+
+    
+</script>
 </html>

@@ -25,7 +25,35 @@
 .informationdiv ul {
   list-style: none;
 }
+.informationdiv li {
+  color: white;
+}
 .infoseperate {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.title_div h1 {
+  color: #ff652f;
+}
+.bar_button button {
+  margin-top: 5px;
+  background-color: #49ff05;
+  border-color: #49ff05;
+}
+.bar_button button:hover {
+  background-color: orange;
+  border-color: orange;
+  color: dimgray;
+}
+.carousel-inner {
+  height: 600px;
+}
+.carousel-item {
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
