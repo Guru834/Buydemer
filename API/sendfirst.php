@@ -34,7 +34,7 @@ $sendgrid = new \SendGrid( SENDGRID_API_KEY );
 
 try {
     $response = $sendgrid->send($email);
-    header("Location: http://localhost/FinalProject/Project/HTML/congratscontact.html");
+    header("Location: http://localhost/Buydemer/Buydemer/HTML/congratscontact.html");
 
     //print $response->statusCode() . "\n";
     //print($response->headers());

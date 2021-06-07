@@ -24,6 +24,7 @@
 }
 .informationdiv ul {
   list-style: none;
+  margin-right: 53px;
 }
 .informationdiv li {
   color: white;
@@ -31,6 +32,25 @@
 .infoseperate {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border-bottom: 1px solid;
+}
+.infoseperate p {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  color: white;
+  font-style: normal;
 }
 .title_div h1 {
   color: #ff652f;
@@ -56,4 +76,8 @@
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+}
+.contact_section4 button {
+  width: 80%;
+  margin-left: 11%;
 }

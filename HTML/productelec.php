@@ -83,17 +83,17 @@ $elecid = $_GET['elecid'];
 
                                 echo "<div class='informationdiv'>
                                 <ul>
-                                    <li class = 'infoseperate'>Model Name = <p>".$modelname."</p></li>
-                                    <li class = 'infoseperate'>Expected Condition = <p>".$eleccondition."</p></li>
-                                    <li class = 'infoseperate'>Expected Storage = <p>".$elecstorage."</p></li>
+                                    <li class = 'infoseperate'>Model Name<p>".$modelname."</p></li>
+                                    <li class = 'infoseperate'>Expected Condition<p>".$eleccondition."</p></li>
+                                    <li class = 'infoseperate'>Expected Storage<p>".$elecstorage."</p></li>
                                 </ul>
                                 </div>";
                                 echo "<div class='informationdiv'>
 
                                 <ul>
-                                    <li class = 'infoseperate'>Expected Color = <p>".$color."</p></li>
-                                    <li class = 'infoseperate'>Expected Quantity = <p>".$quantity."</p></li>
-                                    <li class = 'infoseperate'>Expected description = <p>".$descriptionelec."</p></li>
+                                    <li class = 'infoseperate'>Expected Color<p>".$color."</p></li>
+                                    <li class = 'infoseperate'>Expected Quantity<p>".$quantity."</p></li>
+                                    <li class = 'infoseperate'>Expected description<p>".$descriptionelec."</p></li>
                                     
                                 </ul>
                                     
@@ -108,7 +108,7 @@ $elecid = $_GET['elecid'];
                 
                 <div class="contact_section4">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contact Us</button>
+                        <a href = "contactus.php"><button class="btn btn-primary" type="button">Contact</button></a>
                       </div>
                 </div>
             </div>

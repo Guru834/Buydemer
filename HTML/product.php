@@ -85,20 +85,20 @@ $jobid = $_GET['jobid'];
 
                                 echo "<div class='informationdiv'>
                                 <ul>
-                                    <li class = 'infoseperate'>Job Name = <p>".$jobname."</p></li>
-                                    <li class = 'infoseperate'>City = <p>".$city."</p></li>
-                                    <li class = 'infoseperate'>State = <p>".$state."</p></li>
-                                    <li class = 'infoseperate'>Country = <p>".$country."</p></li>
-                                    <li class = 'infoseperate'>Expected Salary = <p>".$salary."</p></li>
+                                    <li class = 'infoseperate'>Job Name<p>".$jobname."</p></li>
+                                    <li class = 'infoseperate'>City<p>".$city."</p></li>
+                                    <li class = 'infoseperate'>State<p>".$state."</p></li>
+                                    <li class = 'infoseperate'>Country<p>".$country."</p></li>
+                                    <li class = 'infoseperate'>Expected Salary<p>".$salary."</p></li>
                                     
                                 </ul>
                                 </div>";
                                 echo "<div class='informationdiv'>
                                 <ul>
-                                    <li class = 'infoseperate'>Expected description = <p>".$descriptionjob."</p></li>
-                                    <li class = 'infoseperate'>Experience = <p>".$experience."</p></li>
-                                    <li class = 'infoseperate'>Starting Date = <p>".$startingdate."</p></li>
-                                    <li class = 'infoseperate'>currentstatus = <p>".$currentstatus."</p></li>
+                                    <li class = 'infoseperate'>Expected description<p>".$descriptionjob."</p></li>
+                                    <li class = 'infoseperate'>Experience<p>".$experience."</p></li>
+                                    <li class = 'infoseperate'>Starting Date<p>".$startingdate."</p></li>
+                                    <li class = 'infoseperate'>currentstatus<p>".$currentstatus."</p></li>
                                     
                                 </ul>    
                                 </div>";
@@ -108,7 +108,7 @@ $jobid = $_GET['jobid'];
                 </div>
                 <div class="contact_section4">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contact Us</button>
+                        <a href = "contactus.php"><button class="btn btn-primary" type="button">Contact</button></a>
                       </div>
                 </div>
             </div>

@@ -84,20 +84,21 @@ $realestateid = $_GET['realestateid'];
 
                                 echo "<div class='informationdiv'>
                                 <ul>
-                                    <li class = 'infoseperate'>Real-Estate Type = <p>".$namereal."</p></li>
-                                    <li class = 'infoseperate'>City = <p>".$cityreal."</p></li>
-                                    <li class = 'infoseperate'>State = <p>".$statereal."</p></li>
-                                    <li class = 'infoseperate'>Country = <p>".$countryreal."</p></li>
+                                    <li class = 'infoseperate'>Real-Estate Type<p>".$namereal."</p></li>
+                                    <li class = 'infoseperate'>City<p>".$cityreal."</p></li>
+                                    <li class = 'infoseperate'>State<p>".$statereal."</p></li>
+                                    <li class = 'infoseperate'>Country<p>".$countryreal."</p></li>
                                     
                                 </ul>
                                 </div>";
                                 echo "<div class='informationdiv'>
+                                <ul>
 
-                                    <li class = 'infoseperate'>Postal-Code = <p>".$postalcode."</p></li>
-                                    <li class = 'infoseperate'>Expected Description = <p>".$descriptionreal."</p></li>
-                                    <li class = 'infoseperate'>Expected Rent = <p>".$expectederent."</p></li>
-                                    <li class = 'infoseperate'>Expected Lease = <p>".$expectedlease."</p></li>
-                                    
+                                    <li class = 'infoseperate'>Postal-Code<p>".$postalcode."</p></li>
+                                    <li class = 'infoseperate'>Expected Description<p>".$descriptionreal."</p></li>
+                                    <li class = 'infoseperate'>Expected Rent<p>".$expectederent."</p></li>
+                                    <li class = 'infoseperate'>Expected Lease<p>".$expectedlease."</p></li>
+                                </ul>
                                     
                                     
                                 </div>";
@@ -111,7 +112,7 @@ $realestateid = $_GET['realestateid'];
                 
                 <div class="contact_section4">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contact Us</button>
+                        <a href = "contactus.php"><button class="btn btn-primary" type="button">Contact</button></a>
                       </div>
                 </div>
             </div>
