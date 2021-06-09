@@ -97,7 +97,7 @@ form.setAttribute('class', "postform");
     input_skills.style.height = '45px';
     input_skills.style.borderRadius = '15px 50px';
     input_skills.style.marginBottom = '10px';
-input_skills.placeholder = "Enter Somegthing About Job";
+input_skills.placeholder = "Enter Comments";
 input_skills.style.paddingBottom = "47px";
 input_skills.style.paddingTop = "45px";
 
@@ -240,7 +240,7 @@ var formelec = document.createElement("form");
     input_describe_elec .style.height = '100px';
     input_describe_elec .style.borderRadius = '15px 50px';
     input_describe_elec .style.marginBottom = '10px';
-    input_describe_elec .placeholder = "Enter Somegthing About the device";
+    input_describe_elec .placeholder = "Enter Comments";
 
     formelec.appendChild(input_describe_elec);
     formelec.appendChild(br.cloneNode());
@@ -338,7 +338,7 @@ var form = document.createElement("form");
     input_describe_real .style.height = '100px';
     input_describe_real .style.borderRadius = '15px 50px';
     input_describe_real .style.marginBottom = '10px';
-    input_describe_real .placeholder = "Enter Somegthing About the Real-Estate";
+    input_describe_real .placeholder = "Enter Comments";
 
     form.appendChild(input_describe_real);
     form.appendChild(br.cloneNode())

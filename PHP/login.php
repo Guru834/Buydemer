@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "127.0.0.1";
 $username = "root";
 $password = "Guruansh123@123";
@@ -14,28 +15,25 @@ if ($conn->connect_error) {
 } 
 else
 {
+   error_reporting(E_ALL);
+ini_set('display_errors', '1');
     $query = "SELECT Username, Password FROM loginInfo WHERE BINARY Username='$susername' and BINARY Password = '$spassword'";
     $result = mysqli_query($conn, $query) or die(mysql_error());
     $rows = mysqli_num_rows($result);
-    if ($rows == 1) 
+    if ($rows == 0) 
     {
-      $_SESSION['Username'] = $susername;
-      $_SESSION['Password'] = $spassword;
-
-      header('Location: http://localhost/FinalProject/Project/HTML/main.php');
-      exit;
-
-    } 
-    else{
-
-      if(empty($susername) || $_SESSION['Username'] != $susername){
+        if(empty($susername) || $_SESSION['Username'] != $susername){
         header("Location: http://localhost/Buydemer/Buydemer/HTML/login.php?error=UserName/Password is incorrect");
       }
       else if(empty($spassword)||  $_SESSION['spassword'] != $spassword){
         header("Location: http://localhost/Buydemer/Buydemer/HTML/login.php?error=UserName/Password  is incorrect");      }
       
     }
-}
-
-mysqli_close($conn);
+    else
+    {
+      header('Location: http://localhost/Buydemer/Buydemer/HTML/main.php');
+      
+      exit;
+    }
+  }
 ?>

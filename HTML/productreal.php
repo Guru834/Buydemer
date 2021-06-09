@@ -36,11 +36,7 @@ $realestateid = $_GET['realestateid'];
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                   
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="https://cdn.dribbble.com/users/1118376/screenshots/3143125/red-sift-house.gif" alt="First slide">
@@ -52,14 +48,14 @@ $realestateid = $_GET['realestateid'];
                             <img class="d-block w-100" src="https://connectedinvestors.com/blog/wp-content/uploads/2018/01/How-Many-Mortgages-Can-I-have-as-a-Real-Estate-Investor-1.gif" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div class="description_section2">
@@ -83,22 +79,54 @@ $realestateid = $_GET['realestateid'];
                                 $expectedlease = $row['expectedlease'];
 
                                 echo "<div class='informationdiv'>
-                                <ul>
-                                    <li class = 'infoseperate'>Real-Estate Type<p>".$namereal."</p></li>
-                                    <li class = 'infoseperate'>City<p>".$cityreal."</p></li>
-                                    <li class = 'infoseperate'>State<p>".$statereal."</p></li>
-                                    <li class = 'infoseperate'>Country<p>".$countryreal."</p></li>
+                                <table>
+                                <tr>
+                                    <th>Real-Estate Type</th>
+                                    <td>$namereal</td>
                                     
-                                </ul>
+                                </tr>
+                                <tr>
+                                    <th>Expected City</th>
+                                    <td>$cityreal</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected State</th>
+                                    <td>$statereal</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Country</th>
+                                    <td>$countryreal</td>
+                                    
+                                </tr>
+                                </table>
+                                
                                 </div>";
                                 echo "<div class='informationdiv'>
-                                <ul>
-
-                                    <li class = 'infoseperate'>Postal-Code<p>".$postalcode."</p></li>
-                                    <li class = 'infoseperate'>Expected Description<p>".$descriptionreal."</p></li>
-                                    <li class = 'infoseperate'>Expected Rent<p>".$expectederent."</p></li>
-                                    <li class = 'infoseperate'>Expected Lease<p>".$expectedlease."</p></li>
-                                </ul>
+                                <table>
+                                <tr>
+                                    <th>Postal-Code</th>
+                                    <td>$postalcode</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Description</th>
+                                    <td>$descriptionreal</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Rent</th>
+                                    <td>$expectederent</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Lease</th>
+                                    <td>$expectedlease</td>
+                                    
+                                </tr>
+                                </table>
+                                
                                     
                                     
                                 </div>";

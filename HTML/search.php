@@ -24,10 +24,16 @@ include 'connection.php';
                 <a href = "../HTML/main.php" style='text-decoration:none; color:black;'><h1>buydemer</h1></a>
                 </div>
                 <div class="options_div">
-                    <ul>
-                        <li><a href="../HTML/joblink.php">Jobs</a></li>
-                        <li><a href="../HTML/electroniclink.php">Electronic</a></li>
-                        <li><a href="../HTML/realestatelink.php">Real-Estate</a></li>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/joblink.php">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/electroniclink.php">Electronic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/realestatelink.php">Real-Estate</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +70,7 @@ include 'connection.php';
 
                         echo "<a href = 'product.php?jobid=". $row["JobID"]."' style='text-decoration:none; color:black;'><div class='products_div'>
                         <div class='img_div'>
-                            <img src='../IMAGES/jobs.png' alt='...''>
+                            <img src='../IMAGES/briefcase.svg' alt='...''>
                         </div>
 
                         <div class='information_div'>
@@ -73,7 +79,7 @@ include 'connection.php';
                 
                             </div>
                             <div class='product_des_div'>
-                                <div>$descriptionjob</div>
+                                <span>$descriptionjob</span>
                 
                             </div>
                         </div> 
@@ -106,7 +112,7 @@ include 'connection.php';
 
                         echo "<a href = 'productelec.php?elecid=". $row["ElectronicID"]."' style='text-decoration:none; color:black;'><div class='products_div'>
                         <div class='img_div'>
-                            <img src='../IMAGES/elec.jpg' alt='...''>
+                            <img src='../IMAGES/cpu.svg' alt='...''>
                         </div>
 
                         <div class='information_div'>
@@ -115,7 +121,7 @@ include 'connection.php';
                 
                             </div>
                             <div class='product_des_div'>
-                                <div>$descriptionelec</div>
+                                <span>$descriptionelec</span>
                 
                             </div>
                         </div> 
@@ -147,7 +153,7 @@ include 'connection.php';
 
                         echo "<a href = 'productreal.php?realestateid=". $row["RealEstateID"]."' style='text-decoration:none; color:black;'><div class='products_div'>
                         <div class='img_div'>
-                            <img src='../IMAGES/realestate.jpg' alt='...''>
+                            <img src='../IMAGES/building-alt.svg' alt='...''>
                         </div>
 
                         <div class='information_div'>
@@ -156,7 +162,7 @@ include 'connection.php';
                 
                             </div>
                             <div class='product_des_div'>
-                                <div>$descriptionreal</div>
+                                <span>$descriptionreal</span>
                 
                             </div>
                         </div> 

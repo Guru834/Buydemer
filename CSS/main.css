@@ -1,6 +1,5 @@
-.body {
-  margin: 0;
-  padding: 0;
+* {
+  font-family: "Girassol", cursive !important;
 }
 .container {
   margin: 0 auto;
@@ -42,17 +41,17 @@
   letter-spacing: 3px;
 }
 .options_div li a:hover {
-  color: red;
+  color: #ff652f;
 }
 .bar-right button {
   padding: 6px;
   margin-top: 9px;
-  background-color: #49ff05;
-  border-color: #49ff05;
+  background-color: #ff652f;
+  border-color: #ff652f;
 }
 .bar-right button:hover {
-  background-color: orange;
-  border-color: orange;
+  background-color: #49ff05;
+  border-color: #49ff05;
 }
 .searchbar_div form {
   margin: auto;
@@ -65,9 +64,11 @@
   width: 45%;
   background: #f1f1f1;
   margin-left: 24%;
-  margin-top: 13px;
+  margin-top: 40px;
   margin-right: 7px;
   border-radius: 25px;
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 .searchbar_div button {
   width: 10%;
@@ -88,20 +89,49 @@
 
 /* Products */
 
+.product_title_div {
+  color: #ff652f;
+}
+.product_des_div {
+  color: white;
+}
+
 .products_div {
   border: 1px solid black;
   display: flex;
   /* justify-content: space-between; */
   margin: 10px;
   min-width: 990px;
-  background-color: #fcfbfb;
+  background-color: #272727;
   border-radius: 10px;
+  background-color: #3d3d3d;
+  transition: all 0.6s linear;
+}
+.products_div:hover {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 40 1000 11px rgba(33, 33, 33, 0.2);
+  transform: scaleY(1.2);
+  color: #272727;
+}
+.products_div:hover span {
+  color: #272727;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+}
+.products_div:hover img {
+  opacity: 1;
+}
+.img_div {
+  margin-right: 35px;
 }
 .img_div img {
   height: 200px;
   width: 200px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 15px;
+  opacity: 0.5;
 }
 .information_div {
   margin: 10px;
@@ -119,6 +149,7 @@
   height: 100px;
   width: 100px;
 }
+
 /* @media only screen and (max-width: 990px) {
   .products_div {
     background-color: lightblue;

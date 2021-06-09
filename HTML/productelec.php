@@ -37,11 +37,7 @@ $elecid = $_GET['elecid'];
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="https://technologystudent.com/elec1/elec1a.gif" alt="First slide">
@@ -53,14 +49,14 @@ $elecid = $_GET['elecid'];
                             <img class="d-block w-100" src="https://cdn.dribbble.com/users/1107512/screenshots/5554208/floating_loop.gif" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div class="description_section2">
@@ -82,20 +78,45 @@ $elecid = $_GET['elecid'];
                                 $descriptionelec= $row['descriptionelec'];
 
                                 echo "<div class='informationdiv'>
-                                <ul>
-                                    <li class = 'infoseperate'>Model Name<p>".$modelname."</p></li>
-                                    <li class = 'infoseperate'>Expected Condition<p>".$eleccondition."</p></li>
-                                    <li class = 'infoseperate'>Expected Storage<p>".$elecstorage."</p></li>
-                                </ul>
+                                <table>
+                                <tr>
+                                    <th>Model Name</th>
+                                    <td>$modelname</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Condition</th>
+                                    <td>$eleccondition</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Storage</th>
+                                    <td>$elecstorage</td>
+                                    
+                                </tr>
+                                </table>
+                                
                                 </div>";
                                 echo "<div class='informationdiv'>
-
-                                <ul>
-                                    <li class = 'infoseperate'>Expected Color<p>".$color."</p></li>
-                                    <li class = 'infoseperate'>Expected Quantity<p>".$quantity."</p></li>
-                                    <li class = 'infoseperate'>Expected description<p>".$descriptionelec."</p></li>
+                                <table>
+                                <tr>
+                                    <th>Expected Color</th>
+                                    <td>$color</td>
                                     
-                                </ul>
+                                </tr>
+                                <tr>
+                                    <th>Expected Quantity</th>
+                                    <td>$quantity</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected description</th>
+                                    <td>$descriptionelec</td>
+                                    
+                                </tr>
+                                </table>
+
+                                
                                     
                                     
                                 </div>";

@@ -15,15 +15,18 @@
         </div>
         <div class="container-form">
             <div class="form1">
-                
-                        <?php if(isset($_GET['error'])){ ?>
-                            <p class = "error" style = "margin:0%; color:red;"><?php echo $_GET['error']; ?></p>
+                <form action="../PHP/login.php" method = "POST">
+                    <?php if(isset($_GET['error'])){ ?>
+                            <p class = "error" style = "margin:0%; color:red;margin-left: 16%;font-size: 17px;font-family: 'Girassol', cursive;"><?php echo $_GET['error']; ?></p>
                         <?php } ?>
                     <input type="text" placeholder="Enter Username" name="username" id = "username"> 
                     <input type="password" placeholder="Enter Password" name="password" id = "password">  
-                    <button type="submit"><a href = "../PHP/login.php">Sign-in</a></button>
-                    <button type="submit"><a href = "new_account.html">Sign-up</a></button>
-                
+                    <button type="submit">Sign-in</button>
+                </form>
+                      
+            </div>
+            <div class="signupdiv">
+                <a href = "new_account.html"><button type="submit">Sign-up</button></a>
             </div>
         </div>
     </div>

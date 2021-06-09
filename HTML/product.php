@@ -35,11 +35,7 @@ $jobid = $_GET['jobid'];
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="https://cdn.dribbble.com/users/891859/screenshots/3472550/hireme.gif" alt="First slide">
@@ -51,14 +47,14 @@ $jobid = $_GET['jobid'];
                             <img class="d-block w-100" src="https://media3.giphy.com/media/l2JhrOelSEWY1ubba/giphy.gif" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div class="description_section2">
@@ -84,23 +80,59 @@ $jobid = $_GET['jobid'];
                                 $currentstatus = $row['currentstatus'];
 
                                 echo "<div class='informationdiv'>
-                                <ul>
-                                    <li class = 'infoseperate'>Job Name<p>".$jobname."</p></li>
-                                    <li class = 'infoseperate'>City<p>".$city."</p></li>
-                                    <li class = 'infoseperate'>State<p>".$state."</p></li>
-                                    <li class = 'infoseperate'>Country<p>".$country."</p></li>
-                                    <li class = 'infoseperate'>Expected Salary<p>".$salary."</p></li>
+                                <table>
+                                <tr>
+                                    <th>Job Name</th>
+                                    <td>$jobname</td>
                                     
-                                </ul>
+                                </tr>
+                                <tr>
+                                    <th>City</th>
+                                    <td>$city</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>State</th>
+                                    <td>$state</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Country</th>
+                                    <td>$country</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Expected Salary</th>
+                                    
+                                    <td>$salary</td>
+                                    
+                                </tr>
+                                </table>
                                 </div>";
                                 echo "<div class='informationdiv'>
-                                <ul>
-                                    <li class = 'infoseperate'>Expected description<p>".$descriptionjob."</p></li>
-                                    <li class = 'infoseperate'>Experience<p>".$experience."</p></li>
-                                    <li class = 'infoseperate'>Starting Date<p>".$startingdate."</p></li>
-                                    <li class = 'infoseperate'>currentstatus<p>".$currentstatus."</p></li>
+
+                                <table>
+                                <tr>
+                                    <th>Expected description</th>
+                                    <td>$descriptionjob</td>
                                     
-                                </ul>    
+                                </tr>
+                                <tr>
+                                    <th>Experience</th>
+                                    <td>$experience</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>Starting Date</th>
+                                    <td>$startingdate</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>currentstatus</th>
+                                    <td>$currentstatus</td>
+                                    
+                                </tr>
+                                </table>   
                                 </div>";
                              }
                          }

@@ -24,10 +24,16 @@ include 'connection.php';
                 <a href = "../HTML/main.php" style='text-decoration:none; color:black;'><h1>buydemer</h1></a>
                 </div>
                 <div class="options_div">
-                    <ul>
-                        <li><a href="../HTML/joblink.php">Jobs</a></li>
-                        <li><a href="../HTML/electroniclink.php" style = 'color:red;'>Electronic</a></li>
-                        <li><a href="../HTML/realestatelink.php">Real-Estate</a></li>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/joblink.php">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../HTML/electroniclink.php">Electronic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/realestatelink.php">Real-Estate</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -37,8 +43,8 @@ include 'connection.php';
         </div>
         <div class="searchbar_div">
             <form action="searchelec.php" method = "post">
-                <input type="text" placeholder="Search for anything..." name = "search">
-                <a href = "#"><button type = "submit" name = "submit-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <input type="text" placeholder="Search for anything..." name = "search" id = "search" oninput="searchButtonMagic()">
+                <a href = "#"><button type = "submit" name = "submit-search" id = "btnsearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg></button></a>
             </form>
@@ -57,7 +63,7 @@ include 'connection.php';
                         $descriptionelec= $row['descriptionelec'];
                         echo "<a href = 'productelec.php?elecid=". $row["ElectronicID"]."' style='text-decoration:none; color:black;'><div class='products_div'>
                         <div class='img_div'>
-                            <img src='../IMAGES/elec.jpg' alt='...''>
+                            <img src='../IMAGES/cpu.svg' alt='...''>
                         </div>
             
                         <div class='information_div'>
@@ -66,7 +72,7 @@ include 'connection.php';
                 
                             </div>
                             <div class='product_des_div'>
-                                <div>$descriptionelec</div>
+                                <span>$descriptionelec</span>
                 
                             </div>
                         </div> 
@@ -83,4 +89,15 @@ include 'connection.php';
     </div>
     
 </body>
+<script>
+
+    var search = document.getElementById('search');
+    document.getElementById('btnsearch').disabled = true;
+
+    function searchButtonMagic(){
+        document.getElementById('btnsearch').disabled = false;
+    }
+
+    
+</script>
 </html>

@@ -1,6 +1,5 @@
-.body {
-  margin: 0;
-  padding: 0;
+* {
+  font-family: "Girassol", cursive !important;
 }
 .container {
   margin: 0 auto;
@@ -21,6 +20,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 2%;
+}
+.informationdiv table {
+  color: white;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  text-align: left;
+  padding: 20px;
+}
+td {
+  font-size: 17px;
+}
+th {
+  font-size: 20px;
+}
+.infotable {
+  width: 20px;
 }
 .informationdiv ul {
   list-style: none;
@@ -57,12 +75,13 @@
 }
 .bar_button button {
   margin-top: 5px;
-  background-color: #49ff05;
-  border-color: #49ff05;
+
+  background-color: #ff652f;
+  border-color: #ff652f;
 }
 .bar_button button:hover {
-  background-color: orange;
-  border-color: orange;
+  background-color: #49ff05;
+  border-color: #49ff05;
   color: dimgray;
 }
 .carousel-inner {

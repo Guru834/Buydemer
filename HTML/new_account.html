@@ -22,23 +22,45 @@
             type="text"
             placeholder="Enter First-Name"
             name="FirstName"
+            id="fn"
+            onblur="validatefn()"
             required
           />
+
           <input
             type="text"
             placeholder="Enter Last-Name"
             name="LastName"
+            id="ln"
+            onblur="validateln()"
             required
           />
 
           <input
             type="text"
             placeholder="Enter Comapny Name"
+            id="cn"
+            onblur="validatecn()"
             name="CompanyName"
           />
-          <input type="text" placeholder="Enter Email" name="Email" required />
 
-          <input type="text" placeholder="Enter Phone" name="Phone" required />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="Email"
+            id="email"
+            onblur="validateemail()"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Phone"
+            name="Phone"
+            id="pn"
+            onblur="validatepn()"
+            required
+          />
 
           <input type="text" placeholder="Enter City" name="City" required />
 
@@ -46,6 +68,8 @@
             type="text"
             placeholder="Enter Province"
             name="Province"
+            id="province"
+            onblur="validateprovince()"
             required
           />
 
@@ -53,13 +77,16 @@
             type="text"
             placeholder="Enter Country"
             name="Country"
-            required
+            value="Canada"
+            readonly
           />
 
           <input
             type="text"
             placeholder="Enter Postal-Code"
             name="PostalCode"
+            id="pc"
+            onblur="validatepostalcode()"
             required
           />
 
@@ -82,4 +109,151 @@
       </div>
     </div>
   </body>
+  <script>
+    function validatefn() {
+      var num = 0;
+      var firstname = document.getElementById("fn").value;
+
+      if (firstname == "") {
+        document.getElementById("fn").value = "";
+        document.getElementById("fn").placeholder =
+          "Please enter your First-name";
+        num = 1;
+      } else {
+        var regex = /^[a-zA-Z\s]+$/;
+        if (regex.test(firstname) == false) {
+          document.getElementById("fn").value = "";
+          document.getElementById("fn").placeholder =
+            "Please don't use special characters";
+          num = 1;
+        }
+      }
+    }
+
+    function validateln() {
+      var lastname = document.getElementById("ln").value;
+      var num = 0;
+      if (lastname == "") {
+        document.getElementById("ln").value = "";
+        document.getElementById("ln").placeholder =
+          "Please enter your Last-name";
+
+        num = 1;
+      } else {
+        var regex = /^[a-zA-Z\s]+$/;
+        if (regex.test(lastname) == false) {
+          document.getElementById("ln").value = "";
+          document.getElementById("ln").placeholder =
+            "Please don't use special characters";
+          num = 1;
+        }
+      }
+    }
+
+    function validatecn() {
+      var companyname = document.getElementById("cn").value;
+      var num = 0;
+      if (companyname == "") {
+        document.getElementById("cn").value = "";
+        document.getElementById("cn").placeholder =
+          "Please enter your Company-name";
+
+        num = 1;
+      }
+    }
+
+    function validatepn() {
+      var phone = document.getElementById("pn").value;
+      var num = 0;
+      if (phone == "") {
+        document.getElementById("pn").value = "";
+        document.getElementById("pn").placeholder =
+          "Please enter your mobile number";
+
+        num = 1;
+      } else {
+        var regex = /^[1-9]\d{9}$/;
+        if (regex.test(phone) == false) {
+          document.getElementById("pn").value = "";
+          document.getElementById("pn").placeholder =
+            "Please enter a valid 10 digit mobile number";
+          num = 1;
+        }
+      }
+    }
+
+    function validateemail() {
+      var email = document.getElementById("email").value;
+      var num = 0;
+      if (email == "") {
+        document.getElementById("email").value = "";
+        document.getElementById("email").placeholder =
+          "Please enter your email address";
+
+        num = 1;
+      } else {
+        var regex = /^\S+@\S+\.\S+$/;
+        if (regex.test(email) == false) {
+          document.getElementById("email").value = "";
+          document.getElementById("email").placeholder =
+            "Please enter a valid email address";
+          num = 1;
+        }
+      }
+    }
+
+    function validatepostalcode() {
+      var postalcode = document.getElementById("pc").value;
+      var num = 0;
+      if (postalcode == "") {
+        document.getElementById("pc").value = "";
+        document.getElementById("pc").placeholder =
+          "Please enter your postal-code";
+
+        num = 1;
+      } else {
+        var regex = /^([A-Z][0-9][A-Z])\s*([0-9][A-Z][0-9])$/;
+        if (regex.test(postalcode) == false) {
+          document.getElementById("pc").value = "";
+          document.getElementById("pc").placeholder =
+            "Please enter a valid postal-code";
+          num = 1;
+        }
+      }
+    }
+
+    function validateprovince() {
+      var province = document.getElementById("province").value;
+      var num = 0;
+      if (province == "") {
+        document.getElementById("province").value = "";
+        document.getElementById("province").placeholder =
+          "Please enter your province";
+
+        num = 1;
+      } else {
+        var regex = [
+          "Alberta",
+          "British Columbia",
+          "Manitoba",
+          "New Brunswick",
+          "Newfoundland and Labrador",
+          "Northwest Territories",
+          "Nova Scotia",
+          "Nunavut",
+          "Ontario",
+          "Prince Edward Island",
+          "Quebec",
+          "Saskatchewan",
+          "Yukon Territory",
+        ];
+        if (!regex.includes(province)) {
+          document.getElementById("province").value = "";
+          document.getElementById("province").placeholder =
+            "Please enter a valid province";
+          num = 1;
+        }
+      }
+    }
+  </script>
 </html>
