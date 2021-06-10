@@ -101,17 +101,17 @@ $elecid = $_GET['elecid'];
                                 <table>
                                 <tr>
                                     <th>Expected Color</th>
-                                    <td>$color</td>
+                                    <td class = 'extrapadding'>$color</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Expected Quantity</th>
-                                    <td>$quantity</td>
+                                    <td class = 'extrapadding'>$quantity</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Expected description</th>
-                                    <td>$descriptionelec</td>
+                                    <td class = 'extrapadding'>$descriptionelec</td>
                                     
                                 </tr>
                                 </table>

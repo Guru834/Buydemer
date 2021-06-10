@@ -114,22 +114,22 @@ $jobid = $_GET['jobid'];
                                 <table>
                                 <tr>
                                     <th>Expected description</th>
-                                    <td>$descriptionjob</td>
+                                    <td class = 'extrapadding'>$descriptionjob</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Experience</th>
-                                    <td>$experience</td>
+                                    <td class = 'extrapadding'>$experience</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Starting Date</th>
-                                    <td>$startingdate</td>
+                                    <td class = 'extrapadding'>$startingdate</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>currentstatus</th>
-                                    <td>$currentstatus</td>
+                                    <td class = 'extrapadding'>$currentstatus</td>
                                     
                                 </tr>
                                 </table>   

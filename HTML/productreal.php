@@ -107,22 +107,22 @@ $realestateid = $_GET['realestateid'];
                                 <table>
                                 <tr>
                                     <th>Postal-Code</th>
-                                    <td>$postalcode</td>
+                                    <td class = 'extrapadding'>$postalcode</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Expected Description</th>
-                                    <td>$descriptionreal</td>
+                                    <td class = 'extrapadding'>$descriptionreal</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Expected Rent</th>
-                                    <td>$expectederent</td>
+                                    <td class = 'extrapadding'>$expectederent</td>
                                     
                                 </tr>
                                 <tr>
                                     <th>Expected Lease</th>
-                                    <td>$expectedlease</td>
+                                    <td class = 'extrapadding'>$expectedlease</td>
                                     
                                 </tr>
                                 </table>
