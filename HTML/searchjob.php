@@ -79,7 +79,7 @@ include 'connection.php';
                 
                             </div>
                             <div class='product_des_div'>
-                                <div>$descriptionjob</div>
+                                <span>$descriptionjob</span>
                 
                             </div>
                         </div> 

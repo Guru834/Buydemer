@@ -12,8 +12,19 @@ if ($conn->connect_error) {
 } 
 else
 {
+
+  $description = $_POST["descriptionreal"];
+  $description = filter_var($description, FILTER_SANITIZE_SPECIAL_CHARS);
+
+  $namereal = $_POST["namereal"];
+  $namereal = filter_var($namereal, FILTER_SANITIZE_SPECIAL_CHARS);
+
+  $expectedLease = $_POST["expectedLease"];
+  $expectedLease = filter_var($expectedLease, FILTER_SANITIZE_SPECIAL_CHARS);
+
+
   $sql = "INSERT INTO RealEstate (namereal, cityreal, statereal, countryreal, postalcode, descriptionreal, expectederent, expectedlease)
-  VALUES ('".$_POST["namereal"]."','".$_POST["cityreal"]."','".$_POST["statereal"]."','".$_POST["countryreal"]."','".$_POST["postalcode"]."','".$_POST["descriptionreal"]."','".$_POST["expectedRent"]."','".$_POST["expectedLease"]."')";
+  VALUES ('".$_POST["namereal"]."','".$_POST["cityreal"]."','".$_POST["statereal"]."','".$_POST["countryreal"]."','".$_POST["postalcode"]."','".$description."','".$_POST["expectedRent"]."','".$_POST["expectedLease"]."')";
 
   if (mysqli_query($conn, $sql)) {
     include '../HTML/congrats.html';

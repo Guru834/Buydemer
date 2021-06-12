@@ -11,9 +11,15 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
 
+$description = $_POST["descriptionjob"];
+  $description = filter_var($description, FILTER_SANITIZE_SPECIAL_CHARS);
+
+  $experience = $_POST["experience"];
+  $experience = filter_var($experience, FILTER_SANITIZE_SPECIAL_CHARS);
+
 
 $sql = "INSERT INTO Jobs (jobname, city, state, country, salary, descriptionjob, experience, startingdate, currentstatus)
-VALUES ('".$_POST["jobname"]."','".$_POST["city"]."','".$_POST["state"]."','".$_POST["country"]."','".$_POST["salary"]."','".$_POST["descriptionjob"]."','".$_POST["experience"]."','".$_POST["startingdate"]."','".$_POST["currentstatus"]."')";
+VALUES ('".$_POST["jobname"]."','".$_POST["city"]."','".$_POST["state"]."','".$_POST["country"]."','".$_POST["salary"]."','".$description."','".$_POST["experience"]."','".$_POST["startingdate"]."','".$_POST["currentstatus"]."')";
 
 if (mysqli_query($conn, $sql)) {
     include '../HTML/congrats.html';

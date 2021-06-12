@@ -1,3 +1,6 @@
+* {
+  font-family: "Girassol", cursive !important;
+}
 .container {
   margin: 0 auto;
   min-width: 990px;
@@ -67,6 +70,7 @@
   font-size: 15px;
   border: transparent;
   padding-left: 20px !important;
+  font-family: "Girassol", cursive !important;
 }
 .postform button {
   border: transparent;

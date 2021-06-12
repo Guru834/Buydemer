@@ -56,7 +56,7 @@ form.setAttribute('class', "postform");
     input_state.style.height = '45px';
     input_state.style.borderRadius = '15px 50px';
     input_state.style.marginBottom = '10px';
-    input_state.placeholder = "Enter State";
+    input_state.placeholder = "Enter Province";
 
     form.appendChild(input_state);
     form.appendChild(br.cloneNode());
@@ -296,7 +296,7 @@ var form = document.createElement("form");
     input_state_real.style.height = '45px';
     input_state_real.style.borderRadius = '15px 50px';
     input_state_real.style.marginBottom = '10px';
-    input_state_real.placeholder = "Enter state";
+    input_state_real.placeholder = "Enter Province";
 
     form.appendChild(input_state_real);
     form.appendChild(br.cloneNode())
