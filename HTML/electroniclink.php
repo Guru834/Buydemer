@@ -39,7 +39,7 @@ include 'connection.php';
             </div>
             <div class="bar-right">
             <button type="button" class="btn btn-info"><a href="../HTML/post.html"  style="text-decoration:none; color:black;">Post</a></button>
-                <button type="button" class="btn btn-info"><a href="../HTML/login.html"  style="text-decoration:none; color:black;">Logout</a></button>            </div>
+                <button type="button" class="btn btn-info"><a href="../HTML/login.php"  style="text-decoration:none; color:black;">Logout</a></button>            </div>
         </div>
         <div class="searchbar_div">
             <form action="searchelec.php" method = "post">
